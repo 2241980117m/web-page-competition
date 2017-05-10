@@ -1,0 +1,127 @@
+body{
+	overflow: hidden;
+}
+.min, .second {
+    width: 21rem;
+    height: 21rem;
+    margin-top:8%;
+    margin-left: 15%;
+    float: left;
+    margin-right: 3rem;
+}
+.load1,.load2,.load3,.load3,.load4,.load5{
+    width: 21rem;
+    height: 21rem;
+    border: 3px solid #4885ed;
+    border-top-left-radius: 10.5rem 10.5rem;
+    border-top-right-radius: 10.5rem 10.5rem;
+    border-bottom: 0px;
+    border-left: 0;
+    border-right: 0;
+ }
+.load2{
+	width: 18rem;
+    height: 18rem;
+    border: 3px solid #db3236;
+    border-top-left-radius: 9rem 9rem;
+    border-top-right-radius: 9rem 9rem;
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0px; 
+}
+.load3{
+	width: 19rem;
+    height: 19rem;
+   border-top-left-radius: 9.5rem 9.5rem;
+   border-top-right-radius: 9.5rem 9.5rem;
+   transform-origin: 50% 9.5rem;
+   border: 3px solid #f4c20d;
+    border-bottom: 0px; 
+}
+.load4{
+	width: 18rem;
+    height: 18rem;
+    border-top-left-radius: 9rem 9rem;
+    border-top-right-radius: 9rem 9rem;
+    border: 3px solid #3cba54;
+     border-bottom: 0px; 
+}
+.load5{
+	width: 17rem;
+    height: 17rem;
+    border-top-left-radius: 8.5rem 8.5rem;
+    border-top-right-radius: 8.5rem 8.5rem;
+    border: 3px solid #bd6116;
+     border-bottom: 0px; 
+}
+@keyframes rotateClockwise{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@keyframes rotateCounterClockwise{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(-360deg);
+  }
+}
+@keyframes colorChange{
+  10%{
+    color:#4885ed;
+  }
+  20%{
+    color:#db3236;
+  }
+  40%{
+    color:#f4c20d;
+  }
+  60%{
+    color:#4885ed;
+  }
+  80%{
+    color:#3cba54;
+  }
+  90%{
+    color:#db3236;
+  }
+  100%{
+    color:#4885ed;
+  }
+}
+.load1{
+  animation:rotateClockwise 1.8s linear infinite;
+} 
+ .load2{
+  animation: rotateCounterClockwise 1.2s linear infinite;
+  /* transform-origin: 50% 10rem; */
+}
+ .load3{
+  animation:rotateClockwise 1.4s linear infinite;
+ /*  transform-origin:50% 10rem; */
+}
+/* .load4{
+     animation:rotateCounterClockwise 1.6s linear infinite;
+     transform-origin: 50% 9rem;
+  }
+  .load5{
+   animation:rotateClockwise 2s linear infinite;
+   transform-origin: 50% 8rem;
+  }  */
+.content {
+    width: 100%;
+    margin-top: -3rem;
+    height: 8rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 5rem;
+}

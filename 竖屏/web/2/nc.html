@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>纳米科学</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <script script src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+				$(".a1").animate({
+					left:'40%',
+				},1000);
+		});
+		$(document).ready(function(){
+				$(".a2").animate({
+					right:'35%',
+				},1000);
+		});
+		$(document).ready(function(){
+		$(window).scroll(function () {
+    if ($(window).scrollTop() > $(".tupian1").height() ) {
+            $(".tu1").animate({
+					right:'2%',
+				},1000);
+            $(".jiben1").fadeIn(1000);;
+    }
+    });
+		});
+		$(document).ready(function(){
+		$(window).scroll(function () {
+		if ($(window).scrollTop() > $(".tu1").offset().top ) {
+            $(".tu2").animate({
+					left:'5%',
+				},1000);
+            $(".fazhan1").fadeIn(1000);;
+    }
+    });
+		});
+		$(document).ready(function(){
+		$(window).scroll(function () {
+		if ($(window).scrollTop() > $(".tu2").offset().top ) {
+            $(".tu3").animate({
+					right:'2%',
+				},1000);
+            $(".jishu1").fadeIn(1000);;
+    }
+    });
+		});
+		$(document).ready(function(){
+		$(window).scroll(function () {
+		if ($(window).scrollTop() > $(".tu3").offset().top ) {
+            $(".tu4").animate({
+					left:'5%',
+				},1000);
+            $(".weilai1").fadeIn(1000);;
+    }
+    });
+		});
+		$(document).ready(function(){
+		$(window).scroll(function () {
+		if ($(window).scrollTop() > $(".weilai1").offset().top - 100) {
+            $(".end1").fadeIn(1000);;
+    }
+    });
+		});
+		$(document).ready(function(){
+         $(".a").click(function(){
+        $("#all1").show();
+  });
+});
+    $(document).ready(function(){
+         $("img.tuichu").click(function(){
+        $("#all1").hide();
+  });
+});
+        $(document).ready(function(){
+         $(".b").click(function(){
+        $("#all2").show();
+  });
+});
+    $(document).ready(function(){
+         $("img.tuichu").click(function(){
+        $("#all2").hide();
+  });
+});
+        $(document).ready(function(){
+         $(".c").click(function(){
+        $("#all3").show();
+  });
+});
+    $(document).ready(function(){
+         $("img.tuichu").click(function(){
+        $("#all3").hide();
+  });
+});
+        $(document).ready(function(){
+         $(".d").click(function(){
+        $("#all4").show();
+  });
+});
+    $(document).ready(function(){
+         $("img.tuichu").click(function(){
+        $("#all4").hide();
+  });
+});
+    $(document).ready(function(){
+         $(".down").click(function(){
+        $("body").animate({scrollTop: $(".tupian1").height() + 100 }, 800);
+    });
+});
+    $(document).ready(function(){
+         $(".down2").click(function(){
+        $("body").animate({scrollTop: 0 }, 1000);
+    });
+});
+    $(document).ready(function(){
+         $(".a").mouseover(function(){
+        $(".a").css("border-style","solid");
+    });
+});
+    $(document).ready(function(){
+         $(".a").mouseout(function(){
+        $(".a").css("border-style","none");
+    });
+});
+    $(document).ready(function(){
+         $(".b").mouseover(function(){
+        $(".b").css("border-style","solid");
+    });
+});
+    $(document).ready(function(){
+         $(".b").mouseout(function(){
+        $(".b").css("border-style","none");
+    });
+});
+    $(document).ready(function(){
+         $(".c").mouseover(function(){
+        $(".c").css("border-style","solid");
+    });
+});
+    $(document).ready(function(){
+         $(".c").mouseout(function(){
+        $(".c").css("border-style","none");
+    });
+});
+    $(document).ready(function(){
+         $(".d").mouseover(function(){
+        $(".d").css("border-style","solid");
+    });
+});
+    $(document).ready(function(){
+         $(".d").mouseout(function(){
+        $(".d").css("border-style","none");
+    });
+});
+	
+    	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>纳米科学</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+	body
+	{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden;
+	}
+	footer
+	{
+		background-color: black;
+		opacity: 0.8;
+		color: white;
+		clear: both;
+		padding-top: 5px;
+		text-align: center;
+		width: 100%;
+		height: 8vh;
+	}
+	header li
+	{
+		float: right;
+		list-style: none;
+		font-size: 30px;
+		margin-right: 5vw;
+		padding-top: 2vh;
+	}
+	header a
+	{
+		text-decoration: none;
+	}
+	.tupian2 li
+	{
+		float: left;
+		list-style: none;
+		margin-left: 8vw;
+		font-size: 30px;
+		margin-top: 25px;
+		text-align: center;
+	}
+	header
+	{
+		width: 100%;
+		height: 10vh;
+		background-color: #272727;
+		text-align: right;
+	}	
+	.tupian1
+	{
+		height: 93vh;
+		width: 100%;
+		background-image: url(images/shenjin.jpg);
+		background-size: cover;
+		text-align: right;
+	}
+	.tupian1 h3
+	{
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		font-family: tip;
+		left: -50%;
+		top: 10%;
+		font-size: 11rem;
+		color: white;
+		text-shadow:  1rem 1rem 1rem black;
+	}
+	.tupian1 h2
+	{
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		font-family: tip;
+		right: -100%;
+		bottom: 5%;
+		font-size: 4rem;
+		color: white;
+		text-shadow:  1rem 1rem 1rem black;
+	}
+	.tupian2
+	{
+		height: 100px;
+		width: 100%;
+		border-radius: 30px 30px 30px 30px;
+		background-color: rgba(255,255,255,0.6);
+	}
+	.kuai2
+	{
+		margin-top: 10vh;
+		width: 100%;
+		height: auto;
+	}
+	.kuai2 img
+	{
+		height: 300vh;
+		width: 10%;
+		position: absolute;
+		left: 47%;
+	}
+	.biaoti1
+	{
+		height: auto;
+		width: 100%;
+	}
+	.biaoti1 p
+	{
+		margin: 0;
+		padding: 0;
+		font-size: 6rem;
+		text-align: center;
+		font-family: head;
+	}
+	.jiben1
+	{
+		height: 50vh;
+		width: 30%;
+		position:absolute;
+		top: 150%;
+		left: 15%;
+		display: none;
+	}
+	.jiben1 span
+	{
+		border-radius: 1rem 1rem 1rem 1rem;
+		border-style: none;
+		cursor: pointer;
+		font-size: 4rem;
+		text-align: right;
+		color: #FF8c00;
+	}
+	.jiben1 p
+	{
+		font-size: 2rem;
+		padding-top: 3rem;
+		font-family: KaiTi;
+	}
+	.tu1
+	{
+		height: 40vh;
+		width: 40%;
+		position: absolute;
+		top: 155vh;
+		right: -50%;
+		background-image: url(images/nc5.jpg);
+		background-size: 100% 100%;
+		box-shadow: 1.2rem 1.2rem 1rem black;
+	}
+	.fazhan1
+	{
+		height: 50vh;
+		width: 30%;
+		position: absolute;
+		top: 220%;
+		left: 58%;
+		display: none;
+	}
+	.fazhan1 span
+	{
+		cursor: pointer;
+		border-radius: 1rem 1rem 1rem 1rem;
+		border-style: none;
+		font-size: 4rem;
+		text-align: right;
+		color: #FF8c00;
+	}
+	.fazhan1 p
+	{
+		font-size: 2rem;
+		padding-top: 2rem;
+		font-family: KaiTi;
+	}
+	.tu2
+	{
+		height: 40%;
+		width: 40%;
+		position: absolute;
+		background-image: url(images/nc6.jpg);
+		background-size: 100% 100%;
+		top: 225vh;
+		left: -50%;
+		box-shadow: 1.2rem 1.2rem 1rem black;
+	}
+	.jishu1
+	{
+		height: 50%;
+		width: 30%;
+		top: 290vh;
+		left: 15%;
+		position: absolute;
+		display: none;
+
+	}
+	.jishu1 span
+	{
+		cursor: pointer;
+		border-radius: 1rem 1rem 1rem 1rem;
+		border-style: none;
+		font-size: 4rem;
+		text-align: right;
+		color: #FF8c00;
+	}
+	.jishu1 p
+	{
+		font-size: 2rem;
+		padding-top: 2rem;
+		font-family: KaiTi;
+	}
+	.tu3
+	{
+		height: 35vh;
+		width: 40%;
+		top: 295vh;
+		position: absolute;
+		background-image: url(images/int5.jpg);
+		right: -50%;
+		background-size: 100% 100%;
+		box-shadow: 1.2rem 1.2rem 1rem black;
+	}
+	.tu4
+	{
+		height: 40vh;
+		width: 40%;
+		top: 365vh;
+		position: absolute;
+		background-image: url(images/nc3.jpg);
+		background-size: 100% 100%;
+		left: -50%;
+		box-shadow: 1.2rem 1.2rem 1rem black;
+	}
+	.weilai1 span
+	{
+		cursor: pointer;
+		border-radius: 1rem 1rem 1rem 1rem;
+		border-style: none;
+		font-size: 4rem;
+		text-align: right;
+		color: #FF8c00;
+	}
+	.weilai1 p
+	{
+		font-size: 2rem;
+		padding-top: 3rem;
+		font-family: KaiTi;
+	}
+	.weilai1
+	{
+		display: none;
+		height: 50vh;	
+		width: 30%;
+		top: 360vh;
+		position: absolute;
+		left: 58%;
+	}
+	.end
+	{
+		width: 60%;
+		height: 20vh;
+		position: absolute;
+		top: 440vh;
+		left: 20%;
+	}
+	.end p
+	{
+		text-align: center;
+		font-size: 5rem;
+		font-family: tip;
+		color: #ff6347;
+	}
+	.end1
+	{
+		display: none;
+	}
+	@font-face
+    {
+        font-family: head;
+        src:url(font/font6/Roboto/Roboto-Italic.ttf);
+    }
+	@font-face
+        {
+            font-family: tip;
+            src:url(font/font3/Courgette/Courgette-Regular.ttf);
+        }
+             #four img
+            {
+            transition: rotate 0.5s;
+            -webkit-transition:rotate 0.5s, -webkit-transform 0.5s;
+            }
+             #four img:hover
+            {
+            transform: rotate(90deg);
+             -webkit-transform:rotate(90deg); 
+            }
+             #four{
+                 width:60px;
+                height:60px;
+                margin-left: 20px;
+                 float:right;
+                z-index: 1;
+             }
+             #four img
+             {
+             	cursor: pointer;
+                width: 60px;
+                height: 60px;
+                float: right;
+                position: relative;
+                right: 0px;
+                top: 0;
+             }
+    #fourr{
+        width:100px;
+        height:100px;
+        background-color:white;
+        border-radius:0 100px 0 0;
+        margin-top: -40px;
+        z-index: 1;
+        float:left;
+    }
+    #all1{
+    	display: none;
+    	opacity: 0.9;
+        width:700px;
+        height:auto;
+        position:fixed;
+        background-color:#e7e7e7;
+        left:50%;
+        top:50%;
+        margin-left: -350px;
+        margin-top: -300px;
+        border:0px solid;
+        z-index: 1;
+        border-radius: 12px;
+    }
+    #all2{
+        display: none;
+        opacity: 0.9;
+        width:700px;
+        height:auto;
+        position:fixed;
+        background-color:#e7e7e7;
+        left:50%;
+        top:50%;
+        margin-left: -350px;
+        margin-top: -300px;
+        border:0px solid;
+        z-index: 1;
+        border-radius: 12px;
+    }
+    #all3{
+    	opacity: 0.9;
+        display: none;
+        width:700px;
+        height:auto;
+        position:fixed;
+        background-color:#e7e7e7;
+        left:50%;
+        top:50%;
+        margin-left: -350px;
+        margin-top: -300px;
+        border:0px solid;
+        z-index: 1;
+        border-radius: 12px;
+    }
+    #all4{
+    	opacity: 0.9;
+        display: none;
+        width:700px;
+        height:auto;
+        position:fixed;
+        background-color:#e7e7e7;
+        left:50%;
+        top:50%;
+        margin-left: -350px;
+        margin-top: -300px;
+        border:0px solid;
+        z-index: 1;
+        border-radius: 12px;
+    }
+    #conten{
+        width: 100%;
+        height: 400px;
+        float:left;
+        background-color: black;
+    }
+    
+    .down img:hover
+    {
+        transform: rotateY(540deg);
+        -webkit-transform:rotateY(540deg); 
+    }
+    .down2 img:hover
+    {
+        transform: rotateY(540deg);
+        -webkit-transform:rotateY(540deg); 
+    }
+    .down img
+    {	
+    	opacity: 0.7;
+    	cursor: pointer;
+        width: 5vh;
+        height: 5vh;
+        transition: rotateY 1s;
+        -webkit-transition:rotateY 1s, -webkit-transform 1s;
+    }
+    .down
+    {
+        width: 5vh;
+        height: 5vh;
+        position: relative;
+        top: 93%;
+        left: 50%;
+    }
+    .down2 img
+    {
+        cursor: pointer;
+        height: 10vh;
+        width: 10vh;
+        transition: rotateY 1s;
+        -webkit-transition:rotateY 1s, -webkit-transform 1s;
+    }
+    .down2
+    {
+      position: absolute;
+      top: 10vh;
+      left: 120%;
+    }
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-default" style="color:black;border-radius:6px;margin-bottom:0px;">
+	<ul class="nav navbar-nav navbar-right nav-tabs">
+        <li role="presentation"><a href="file:index.html" style="color:black;font-size:20px;">首页</a></li>
+        <li role="presentation"><a href="file:ai.html" style="color:black;font-size:20px">人工智能</a></li>
+        <li role="presentation" class="active"><a href="#" style="color:black;font-size:20px">纳米科学</a></li>
+        <li role="presentation"><a href="file:about us.html" style="color:black;font-size:20px;">团队介绍</a></li>
+      </ul>
+      </nav>
+<div class="tupian1">
+<h3 class="a1">Nano<br>Technology</h3>
+<h2 class="a2">A Technology that benefits mankind</h2>
+<div class="down">
+                <img src="images/back-4.png">
+            </div>
+</div>
+<div class="kuai2">
+<div class="biaoti1"><p>The New Technology</p><br><p style="color: #FFC125;">Nano Technology</p></div>
+	<img src="images/timg.jpg">
+	<div class="jiben1">
+		<span class="a">什么是纳米科学</span>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纳米科学技术是研究于纳米尺寸（1~100nm）时，物质和设备的设计方法、组成、特性以及应用的应用科学。经过半个多世纪的发展，特别是上世纪末期，随着测量与表征技术的显著提高，纳米科学技术得到了飞速的发展。</p>
+	</div>
+	<div class="tu1"></div>
+	<div class="fazhan1">
+		<span class="b">纳米科学的发展</span>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前，纳米技术已经成为人类科学中相对普遍的一项科学，但是纳米技术的发展却刚刚开纳米技术将在未来为人类带来很多意想不到的利益。据日本阿普莱德研究所提供的材料介绍，以研究分子机械而著称的美国风险企业宰贝克斯公司的一项预测认为，纳米技术的发展可能会经历五个阶段的变革。</p>
+	</div>
+	<div class="tu2"></div>
+	<div class="jishu1">
+		<span class="c">纳米技术的应用</span>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纳米技术的应用主要分为以下几部分1.纳米技术在工业上的应用  2.纳米药物载体的应用  3.纳米材料在涂料中应用4.纳米技术在军事领域中的应用  虽然目前纳米技术在应用层面上依旧不太成熟，需要探索和改进。但纳米技术的各项用途已得到某些改进的试验结果所证明，因此纳米技术的市场前景是为众多人所看好的。</p>
+	</div>
+	<div class="tu3"></div>
+	<div class="weilai1">
+		<span class="d">未来发展</span>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经过几十年对纳米技术的研究探索，现在科学家已经能够在实验室操纵单个原子，纳米技术有了飞跃式的发展。纳米技术的应用研究正在半导体芯片、癌症诊断、光学新材料和生物分子追踪4大领域高速发展。</p>
+	</div>
+	<div class="tu4"></div>
+	<div id="all1" style="font-size:15px;line-height:30px;padding:40px;">
+    <div id="four">
+        <img class="tuichu"  src="images/delete.png">
+    </div>
+    <center><h style="color:black;font-weight:bold;text-align:center;font-size:40px;">什么是纳米科学</h></center>
+    <p style="padding:10px;">
+纳米科学技术是研究于纳米尺寸（1~100nm）时，物质和设备的设计方法、组成、特性以及应用的应用科学。经过半个多世纪的发展，特别是上世纪末期，随着测量与表征技术的显著提高，纳米科学技术得到了飞速的发展，已经成为一门集前沿性、交叉性和多学科特征的新兴研究领域，其理论基础、研究对象涉及物理学、化学、材料学、机械学、微电子学、生物学和医学等多个不同的学科。进入21世纪，世界各国纷纷意识到纳米科技对社会的经济发展、科学技术进步、人类生活等方面产生了巨大影响，加大了对纳米科学技术研究力度，将其列为21世纪最重要的科学技术。
+        
+        
+    </p>
+    <div id="fourr">
+        
+    </div>
+    
+</div>
+<div id="all2" style="font-size:15px;line-height:30px;padding:40px;">
+    <div id="four">
+          <img class="tuichu" src="images/delete.png">
+    </div>
+    <center><h style="color:black;font-weight:bold;text-align:center;font-size:40px;">纳米科学的发展</h></center>
+    <p style="padding:10px;">
+目前，纳米技术已经成为人类科学中相对普遍的一项科学，但是纳米技术的发展却刚刚开纳米技术将在未来为人类带来很多意想不到的利益。据日本阿普莱德研究所提供的材料介绍，以研究分子机械而著称的美国风险企业宰贝克斯公司的一项预测认为，纳米技术的发展可能会经历以下五个阶段：</br>  第一阶段的发展重点是要准确地控制原子数量在100个以下的纳米结构物质。这需要使用计算机设计／制造技术和现有工厂的设备和超精密电子装置。这个阶段的市场规模约为5亿美元。</br>第二个阶段是生产纳米结构物质。在这个阶段，纳米结构物质和纳米复合材料的制造将达到实用化水平。其中包括从有机碳酸钙中制取的有机纳米材料，其强度将达到无机单晶材料的3000倍。该阶段的市场规模在50亿至200亿美元之间。</br>第三个阶段，大量制造复杂的纳米结构物质将成为可能。这要求有高级的计算机设计／制造系统、目标设计技术、计算机模拟技术和组装技术等。该阶段的市场规模可达100亿至1000亿美元。</br>第四个阶段中实现纳米计算机。这个阶段的市场规模将达到2000亿至1万亿美元。</br> 第五阶段里，科学家们将研制出能够制造动力源与程序自律化的元件和装置，市场规模将高达6万亿美元。
+        
+    </p>
+    <div id="fourr">
+        
+    </div>
+    
+</div>
+<div id="all3" style="font-size:15px;line-height:30px;padding:40px;">
+    <div id="four">
+        <img class="tuichu"  src="images/delete.png">
+    </div>
+    <center><h style="color:black;font-weight:bold;text-align:center;font-size:35px;">纳米技术的应用</h></center>
+    <p style="padding:10px;">
+1.纳米技术在工业上的应用：  （1）“杀人蜂”背后贴微芯片发射器追踪 （2）微型汽车   （3）微芯片的放大照片  （4）由于纳米机器人可以小到在人的血管中自由的游动，对于象脑血栓、动脉硬化等病灶，它们可以非常容易的予以清理，而不用再进行危险的开颅、开胸手术。纳米仿生机器人可以为人体传送药物，进行细胞修复等工作。<br>  2.纳米药物载体的应用  （1）纳米药 靶向给药：   其优势优势：难溶性药物的溶解与比表面积有关，粒子小，比表面积大，溶解性能就好，利用率高，疗效也好。2001年，世界上首项将纳米技术应用于中草药加工领域的纳米中药微胶囊生产技术，在西安国
+家高新技术产业开发区诞生并通过了产品技术鉴定。  （2）纳米磁性颗粒      肿瘤比正常组织更容易被加热，当加热到43℃时，癌细胞被杀死而正常细胞则 不会受到损害。当在肿瘤周围植人铁磁性材料并加上交替磁场后，就可通过磁滞的损失达到加热肿瘤的目的。顺磁性的纳米铁氧体颗粒在外加磁场的作用下 温度上升到45℃，可达到杀死肿瘤的目的。<br>3.纳米材料在涂料中应用发展：  纳米涂料对甲醛、氨气等有害气体有吸收和消除的功能，使室内空气更加清新。对各种霉菌的杀抑率达99％以上，有长期的防霉防藻效果。纳米改性内墙涂料，实际上是高级的卫生型涂料，适合于家庭、医院、宾馆和学校的涂装。。<br>4.纳米技术在军事领域中的应用  美国在1999年已研制出超黑粉纳米吸波材料，这种材料对雷达波的吸收率大于99%。美国提出了纳米卫星概念，以及纳型飞行器与传感器。这些都将对未来战争产生重要影响。 
+
+    </p>
+    <div id="fourr">
+        
+    </div>
+    
+</div>
+<div id="all4" style="font-size:15px;line-height:30px;padding:40px;">
+    <div id="four">
+         <img class="tuichu"  src="images/delete.png">
+    </div>
+    <center><h style="color:black;font-weight:bold;text-align:center;font-size:35px;">未来发展</h></center>
+    <p style="padding:10px;">
+经过几十年对纳米技术的研究探索，现在科学家已经能够在实验室操纵单个原子，纳米技术有了飞跃式的发展。纳米技术的应用研究正在半导体芯片、癌症诊断、光学新材料和生物分子追踪4大领域高速发展。可以预测：在不久的将来纳米金属氧化物半导体场效应管、平面显示用发光纳米粒子与纳米复合物、纳米光子晶体将应运而生；用于集成电路的单电子晶体管、记忆及逻辑元件、分子化学组装计算机将投入应用；分子、原子簇的控制和自组装、量子逻辑元件、分子电子器件、纳米机器人、集成生物化学传感器等将被研究制造出来。<br>纳米技术目前从整体上看虽然仍然处于实验研究和小规模生产阶段，但从历史的角度看：上世纪70年代重视微米技术的国家如今都成为发达国家。当今重视发展纳米技术的国家很可能在21世纪成为先进国家。纳米技术对我们既是严峻的挑战，又是难得的机遇。必须加倍重视纳米技术和纳米基础理论的研究，为我国在21世纪实现经济腾飞奠定坚实的基础。整个人类社会将因纳米技术的发展和商业化而产生根本性的变革。
+    </p>
+    <div id="fourr">    
+    </div>
+</div>
+</div>
+<div class="end">
+	<div class="down2"><img src="images/back-2.png"></div>
+	<p class="end1">We believe our life will be much better in the future</p>
+</div>
+</body>
+</html>

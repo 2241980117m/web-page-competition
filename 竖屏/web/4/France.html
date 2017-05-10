@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>这是一个浪漫的国家</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://www.dowebok.com/fullPage.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Passion One'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v6/fY6k21F1QT2c_Oc3HRNDwiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Passion One'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v6/fY6k21F1QT2c_Oc3HRNDwo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'SentyCHALK';   /*字体名称*/
+  src:url('font/font.ttf');      /*字体源文件*/
+}
+@font-face {
+  font-family: '新蒂小丸子';   /*字体名称*/
+  src:url('font/font1.ttf');      /*字体源文件*/
+}
+
+body,  div,  p { margin: 0; padding: 0;}
+
+.pic{float: left;width: 500px;height: 40z0px;}
+.pic img{width: 400px;height: 400px;border-radius: 50%;margin-left: 40px;}
+.h4{margin-right: 20px;float: right;width: 500px;margin-top: 100px;font-family: '新蒂小丸子';font-size: larger;}
+ul { list-style: none;}
+html { overflow: hidden;}
+body { width: 100%;  *cursor: default;
+overflow: hidden; font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;}
+#pageContain { overflow: hidden;}
+.page { display: none; width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;}
+.contain { width: 100%; height: 100%; display: none; position: relative; z-index: 0;}
+.current .contain, .slide .contain { display: block;}
+.current { display: block; z-index: 1;}
+.slide { display: block; z-index: 2;}
+.swipe { display: block; z-index: 3; transition-duration: 0ms !important; -webkit-transition-duration: 0ms !important;}
+.page1 { background:url(img/11.jpg);}
+.page2{ background: lightgoldenrodyellow;}
+.page3{background:mistyrose;}
+.page4 { background: lightyellow;}
+.page5 { background: honeydew;}
+#fon{text-align: center;text-decoration: none;color: black;font-family:'SentyCHALK' ;font-size: 40px;}
+#navBar { z-index: 3; position: absolute; top: 30%; right: 3%;}
+#navBar .active { background: #ccc;}
+#navBar li { cursor: pointer; margin-bottom: 10px; transition: all .7s ease; border-radius: 50%; line-height: 40px; text-align: center; width: 40px; height: 40px;}
+.thumbnail img{
+	width: 200px;height: 200px;
+}
+.txt { margin-top: 5%; font-size: 50px; color: black; text-align: center;}
+</style>
+</head>
+
+<body>
+	
+<div id="pageContain">
+	<div class="page page1 current">
+		<div class="contain">
+			<p class="txt" >Romance Country<br><br>            France</p>
+		</div>
+	</div>
+
+	<div class="page page2">
+		<div class="contain">
+			<p class="txt">Pairs</p>
+			<div class="pic" ><img src="img/1.jpg" ></div>
+			<div class="h4">&nbsp;&nbsp;巴黎是法国的首都，也是这个国家的心脏。法国的公路里程从巴黎圣母院开始，一块小小的石碑标志着这个国家的中心。 法国人有两种，一种是“巴黎人”，另一种是“住在巴黎以外的人”。 今天的巴黎人依然走在十九世纪的碎石路上，在这条大道的沿线，点缀着这些名字：协和广场、凯旋门、卢浮宫、巴黎圣母院……在这条大道上走过的是雨果、波德莱尔、居里夫人、毕加索、乔伊斯…… 大多数游客心中向往的，是一个古老而浪漫的巴黎，一个极具历史感的巴黎。这里的名胜古迹已足以让人流连忘返，而另一个充满前卫与波西米亚气息的巴黎同样让人心驰神往。</div>
+		</div>
+	</div>
+
+	<div class="page page3">
+		<div class="contain">
+			<p class="txt">Nice</p>
+			<div class="pic"><img src="img/2.jpg"></div>
+			<div class="h4">&nbsp;&nbsp;尼斯（Nice）是地中海沿岸法国南部城市，地处法国马赛和意大利热那亚之间，为滨海阿尔卑斯省首府，是法国仅次于巴黎的第二大旅游胜地，全欧洲最具魅力的黄金海岸。尼斯也是欧洲主要旅游中心之一和蔚蓝海岸地区的首选度假地。 尼斯有丰富的文化遗产，如博物馆、罗马遗迹，以及世界一流的歌剧院，同时将普罗旺斯风格融合在大街小巷。漫步在尼斯，恍若花团锦簇的童话世界。 尼斯被人称为：“世界富豪聚集的中心。”海边豪华别墅、比比皆是的昂贵商店和艺术气息的交织使尼斯形成富丽堂皇与典雅优美的独特美。 </div>
+		</div>
+	</div>
+
+	<div class="page page4">
+		<div class="contain">
+			<p class="txt">Provence</p>
+			<div class="pic"><img src="img/4.jpg"></div>
+			<div class="h4">&nbsp;&nbsp;普罗旺斯（Provence）位于法国东南部，毗邻地中海和意大利，从地中海沿岸延伸到内陆的丘陵地区，中间有大河“Rhone”流过。自古就以靓丽的阳光和蔚蓝的天空，迷人的地中海和心醉的薰衣草，令世人惊艳。 从古希腊、古罗马时代起就吸引着无数游人，至今依然是旅游胜地。 普罗旺斯从诞生之日起，就谨慎地保守着她的秘密，直到英国人彼得·梅尔的到来，普罗旺斯许久以来独特生活风格的面纱才渐渐揭开。 在梅尔的笔下“普罗旺斯”已不再是一个单纯的地域名称，更代表了一种简单无忧、轻松慵懒的生活方式，一种宠辱不惊，看庭前花开花落；去留无意，望天上云卷云舒的闲适意境。如果旅行是为了摆脱生活的桎梏，普罗旺斯会让你忘掉一切。</div>
+		</div>
+	</div>
+
+	<div class="page page5">
+		<div class="contain">
+			<a href="index.html" ><img src="img/24.png" style="width:30px;height: 30px;margin-right: 700px;"></a>
+			<p class="txt"><strong>Food</strong>
+				
+				<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/6.jpg"
+                 alt="通用的占位符缩略图">
+                  <div id="fon">芝士蛋糕</div>
+        </a>
+        
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/7.jpg"
+                 alt="通用的占位符缩略图">
+          <div id="fon">卡布奇诺</div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/8.jpg"
+                 alt="通用的占位符缩略图">
+              <div id="fon">法国红酒</div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/9.jpg"
+                 alt="通用的占位符缩略图">
+             <div id="fon">法国牛排</div>
+        </a>
+    </div>
+    <div class="h4" style="font-size: 40px;margin-top: auto;">Have a good dinner!</div>
+    
+	
+    
+   </div>
+</div>
+
+     </p>
+		</div>
+	</div>
+</div>
+
+<ul id="navBar">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+
+<script src="http://cdn.dowebok.com/143/js/fullPage.min.js"></script>
+<script>
+var runPage;
+runPage = new FullPage({
+	id: 'pageContain',
+	slideTime: 800,
+	effect: {
+		transform: {
+			translate: 'Y',
+			scale: [1, 1],
+			rotate: [0, 0]
+		},
+		opacity: [0, 1]
+	},
+	mode: 'wheel,touch,nav:navBar',
+	easing: 'ease-out'
+});
+</script>
+
+<!-- 统计 -->
+<div style="display:none">
+<script src="https://s5.cnzz.com/z_stat.php?id=1253231826&web_id=1253231826"></script>
+<script src="https://hm.baidu.com/hm.js?3c310499b516b4df5e0d4d9c7be29f44"></script>
+</div>
+
+</body>
+</html>

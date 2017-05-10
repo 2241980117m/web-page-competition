@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+html {
+    background-color: rgba(115, 115, 115, 0.1);
+}
+
+#nav {
+    position: fixed;
+    z-index: 10;
+    width: 1024px;
+    height: 50px;
+    opacity: .9;
+    background-color: #323232;
+}
+
+.head-a1 {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+.head-img1 {
+    width: 100px;
+    height: 50px;
+}
+
+.head-ul1 {
+    float: right;
+    width: 500px;
+    height: 50px;
+    margin: 0;
+}
+
+.head-ul1-a {
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 4px solid #323232;
+}
+
+@keyframes color {
+    from {
+        border-color: #323232;
+    }
+    to {
+        border-color: #1296db;
+    }
+}
+
+.head-ul1-a:hover {
+    animation: color 1s;
+    color: #1296db;
+    border-color: #1296db;
+}
+
+.head-li1 {
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 40px;
+    margin: 0 20px 0 20px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: white;
+}
+
+.head-ul2 {
+    position: absolute;
+    left: -999em;
+    width: 120px;
+    padding-left: 25px;
+}
+
+#nav-li:hover ul {
+    left: 68%;
+}
+
+.head-li2 {
+    width: 130px;
+    height: 25px;
+    padding: 25px 0 8px 0;
+    list-style-type: none;
+    background-color: #323232;
+}
+
+.head-li2-a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.head-li2-a:hover {
+    color: #1296db;
+    border-bottom: 3px solid #1296db;
+}
+
+#logo:hover {
+    background-image: url(img/vr1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+#text {
+    height: 50px;
+}
+
+#main {
+    width: 100%;
+}
+
+.mains {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main1 {
+    height: 452px;
+    background-color: white;
+}
+
+#main1:hover {
+    background-image: url(img/main1.jpg);
+    background-color: none;
+}
+
+#main1 > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.3em;
+    font-weight: 300;
+    position: absolute;
+    top: 14%;
+    left: 14%;
+}
+
+#main1 > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.35em;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    text-decoration: none;
+    color: #7759ae;
+}
+
+#main1 > a:visited {
+    color: #7759ae;
+}
+
+#main2 {
+    height: 112px;
+}
+
+#main2>p {
+    color: #424242;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+
+#main3 {
+    height: 425px;
+    background-color: #f6f6f6;
+}
+
+#main3>img {
+    position: absolute;
+    top: 0%;
+    right: 100%;
+}
+
+#main3:hover img {
+    animation: move1 1s;
+    right: 0%;
+}
+
+@keyframes move1 {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+#main3>h1 {
+    color: #424242;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    position: absolute;
+    left: 16%;
+    top: 25%;
+}
+
+#main3>a {
+    color: #7759ae;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+#main4 {
+    height: 450px;
+    background-color: white;
+}
+
+#main4>img {
+    position: absolute;
+    top: 107%;
+}
+
+#main4:hover img {
+    animation: move2 1s;
+    top: 12%;
+}
+
+@keyframes move2 {
+    from {
+        top: 107%;
+    }
+    to {
+        top: 12%;
+    }
+}
+
+#main4>h1 {
+    color: #424242;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    position: absolute;
+    top: 21%;
+    right: 16%;
+}
+
+#main4>a {
+    color: #7759ae;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: absolute;
+    right: 21%;
+    top: 41%;
+}
+
+#main5 {
+    height: 500px;
+    background-color: white;
+    margin-top: 70px;
+}
+
+#main5>h1 {
+    color: #424242;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+#main5>a {
+    color: #7759ae;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: absolute;
+    top: 42%;
+    left: 23%;
+}
+
+#main5>div {
+    position: absolute;
+    top: 14%;
+    right: -53%;
+    width: 400px;
+    height: 335px;
+    background-image: url(img/main5.png);
+}
+
+#main5:hover div {
+    animation: move3 1s;
+    top: 14%;
+    right: 4%;
+}
+
+@keyframes move3 {
+    from {
+        right: -53%;
+    }
+    to {
+        top: 14%;
+        right: 4%;
+    }
+}
+
+#footer {
+    width: 1024px;
+    height: 300px;
+    margin-top: 10%;
+    padding-top: 60px;
+    color: white;
+    background-color: #323232;
+}
+
+p.foot-p1 {
+    font-size: 25px;
+    line-height: 25px;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p.foot-p2 {
+    font-size: 15px;
+    line-height: 15px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.foot-imgs {
+    width: 300px;
+    margin: 40px 362px 0 362px;
+}
+
+img.foot-img {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.foot-qqul {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+}
+
+.foot-qqul:hover .foot-ul1 {
+    display: block;
+}
+
+ul.foot-ul1 {
+    display: none;
+    list-style-type: none;
+    margin: 70px 0px 0px -18px;
+    padding-left: 0px;
+}
+
+li.foot-li1 {
+    margin-top: 15px;
+}
+
+.foot-imgwechat {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 130px;
+}
+
+.foot-imgwechat:hover .foot-wechat {
+    display: block;
+}
+
+.foot-wechat {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 60px 0 0 -30px;
+}
+
+.foot-phoneul {
+    position: absolute;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    margin-left: 215px;
+}
+
+.foot-phoneul:hover .foot-ul2 {
+    display: block;
+}
+
+ul.foot-ul2 {
+    display: none;
+    list-style-type: none;
+    margin-top: 60px;
+    padding-left: 0px;
+}
+
+li.foot-li2 {
+    margin-top: 15px;
+}
+
+a.foot-a {
+    display: inline-block;
+    float: right;
+    margin: 160px 30px 0 0;
+    text-decoration: none;
+    color: white;
+}

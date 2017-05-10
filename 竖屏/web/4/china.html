@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>这是一个艺术气息的国家</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Passion One'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v6/fY6k21F1QT2c_Oc3HRNDwiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Passion One'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v6/fY6k21F1QT2c_Oc3HRNDwo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'SentyCHALK';   /*字体名称*/
+  src:url('font/font.ttf');      /*字体源文件*/
+}
+@font-face {
+  font-family: '新蒂小丸子';   /*字体名称*/
+   src:url('font/font1.ttf');      /*字体源文件*/
+}
+body,  div,  p { margin: 0; padding: 0;}
+.pic{float: left;width: 500px;height: 400px;}
+.pic img{width: 400px;height: 400px;border-radius: 50%;margin-left: 40px;}
+.h4{margin-right: 20px;float: right;width: 500px;margin-top: 100px;font-family:'新蒂小丸子' ;}
+ul { list-style: none;}
+html { overflow: hidden;}
+body { width: 100%;  *cursor: default;
+overflow: hidden; font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;}
+#pageContain { overflow: hidden;}
+.page { display: none; width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;}
+.contain { width: 100%; height: 100%; display: none; position: relative; z-index: 0;}
+.current .contain, .slide .contain { display: block;}
+.current { display: block; z-index: 1;}
+.slide { display: block; z-index: 2;}
+.swipe { display: block; z-index: 3; transition-duration: 0ms !important; -webkit-transition-duration: 0ms !important;}
+.page1 { background:url(img/17.jpg);}
+.page2{ background: lightgoldenrodyellow;}
+.page3{background:mistyrose;}
+.page4 { background: lightyellow;}
+.page5 { background: honeydew;}
+#fon{text-align: center;text-decoration: none;color: black;font-family:'SentyCHALK' ;font-size: 40px;}
+#navBar { z-index: 3; position: absolute; top: 30%; right: 3%;}
+#navBar .active { background: #ccc;}
+#navBar li { cursor: pointer; margin-bottom: 10px; transition: all .7s ease; border-radius: 50%; line-height: 40px; text-align: center; width: 40px; height: 40px;}
+.thumbnail img{
+	width: 200px;height: 200px;
+}
+.txt { margin-top: 5%; font-size: 50px; color: black; text-align: center;}
+</style>
+</head>
+
+<body>
+<div id="pageContain">
+	<div class="page page1 current">
+		<div class="contain">
+			<p class="txt" style="color:white;" >Artistic Country<br>China</p>
+		</div>
+	</div>
+
+	<div class="page page2">
+		<div class="contain">
+			<p class="txt">Forbidden City</p>
+			<div class="pic" ><img src="img/27.jpg" ></div>
+			<div class="h4">&nbsp;&nbsp;北京故宫是中国明清两代的皇家宫殿，旧称为紫禁城，位于北京中轴线的中心，是中国古代宫廷建筑之精华。北京故宫以三大殿为中心，有大小宫殿七十多座，房屋九千余间。是世界上现存规模最大、保存最为完整的木质结构古建筑之一。它是一座长方形城池，南北长961米，东西宽753米，四面围有高10米的城墙，城外有宽52米的护城河。紫禁城内的建筑分为外朝和内廷两部分。外朝的中心为太和殿、中和殿、保和殿，统称三大殿，是国家举行大典礼的地方。内廷的中心是乾清宫、交泰殿、坤宁宫，统称后三宫，是皇帝和皇后居住的正宫</div>
+		</div>
+	</div>
+
+	<div class="page page3">
+		<div class="contain">
+			<p class="txt">Lijiang Rive</p>
+			<div class="pic"><img src="img/26.png"></div>
+			<div class="h4">&nbsp;&nbsp;丽江市区中心海拔高度为2418米，与同为第二批国家历史文化名城的四川阆中、山西平遥、安徽歙县并称为“保存最为完好的四大古城”。
+丽江自古就是一个多民族聚居的地方，共有12个世居民族，其中纳西族23.37万人，彝族20.14万人，傈僳族10.62万人。其中纳西族占古城区及玉龙县（即原丽江县）总人口的57.7%，并且著有“国中贵原，云中丽江。
+丽江旅游景点：玉龙雪山、大研古城、云杉坪、白水河、甘海子、冰塔林、束河古镇、拉海市、虎跳峡、泸沽湖、丽江木府、东巴万神园、四方街、印象丽江、玉水寨、梅里雪山、万古楼！
+   
+</div>
+		</div>
+	</div>
+
+	<div class="page page4">
+		<div class="contain">
+			<p class="txt">Gulangsu</p>
+			<div class="pic"><img src="img/16.jpg"></div>
+			<div class="h4">&nbsp;&nbsp;鼓浪屿位于厦门岛西南面，原名“圆沙洲”，别名“圆洲仔”，明朝改称“鼓浪屿”。乃因岛西南方有一礁石，每当涨潮水涌，浪击礁石，声似擂鼓，人们称“鼓浪石”，鼓浪屿因此而得名。鼓浪屿有许多幽谷和峭崖，沙滩、礁石、峭壁、岩峰，外形奇丽俊秀，其街道纵横交错，清洁幽静，空气新鲜，岛上树木苍翠，繁花似锦，小楼红瓦与绿树相映，格外漂亮。鼓浪屿有许多浓烈的欧陆风格的建筑，被称为是建筑的博览馆.鼓浪屿被称为是“音乐家摇篮”，“钢琴之岛”，漫步海滩上经常会听到钢琴的美妙的音符传来，钢琴声与海浪声相互应答，音乐，已成为鼓浪屿一道绚丽的风景线。另外这里还是明末英雄郑成功屯兵的地方。</div>
+		</div>
+	</div>
+     
+	<div class="page page5">
+		<div class="contain">
+			<a href="index.html" ><img src="img/24.png" style="width:30px;height: 30px;margin-right: 700px;"></a>
+			<p class="txt"><strong>Food</strong><br>
+				
+				<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/23.jpg"
+                 alt="通用的占位符缩略图">
+                 <div id="fon">回锅炒肉</div>
+        </a>
+        
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/30.jpg"
+                 alt="通用的占位符缩略图">
+                 <div id="fon">福满花粥</div>
+                 
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/29.jpg"
+                 alt="通用的占位符缩略图">
+                 <div id="fon">牛肉拉面</div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/28.jpg"
+                 alt="通用的占位符缩略图">
+                 <div id="fon">团圆饺子</div>
+        </a>
+    </div>
+  
+    <div class="h4" style="margin-top: auto;font-size: 40px;">Have a good dinner!</div>
+   </div>
+   
+</div>
+
+     </p>
+		</div>
+	</div>
+</div>
+
+<ul id="navBar">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+
+<script src="http://cdn.dowebok.com/143/js/fullPage.min.js"></script>
+<script>
+var runPage;
+runPage = new FullPage({
+	id: 'pageContain',
+	slideTime: 800,
+	effect: {
+		transform: {
+			translate: 'Y',
+			scale: [1, 1],
+			rotate: [0, 0]
+		},
+		opacity: [0, 1]
+	},
+	mode: 'wheel,touch,nav:navBar',
+	easing: 'ease-out'
+});
+</script>
+
+<!-- 统计 -->
+<div style="display:none">
+<script src="https://s5.cnzz.com/z_stat.php?id=1253231826&web_id=1253231826"></script>
+<script src="https://hm.baidu.com/hm.js?3c310499b516b4df5e0d4d9c7be29f44"></script>
+</div>
+
+</body>
+</html>

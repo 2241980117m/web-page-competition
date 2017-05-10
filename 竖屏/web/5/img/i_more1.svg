@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="ic-launch">
+                <polygon id="Shape" points="0 0 18 0 18 18 0 18"></polygon>
+                <path d="M14,14 L3.5,14 L3.5,3.5 L8.75,3.5 L8.75,2 L3.5,2 C2.6675,2 2,2.675 2,3.5 L2,14 C2,14.825 2.6675,15.5 3.5,15.5 L14,15.5 C14.825,15.5 15.5,14.825 15.5,14 L15.5,8.75 L14,8.75 L14,14 L14,14 Z M10.25,2 L10.25,3.5 L12.9425,3.5 L5.57,10.8725 L6.6275,11.93 L14,4.5575 L14,7.25 L15.5,7.25 L15.5,2 L10.25,2 L10.25,2 Z" id="Shape" fill="#FF6E40"></path>
+            </g>
+        </g>
+    </g>
+</svg>

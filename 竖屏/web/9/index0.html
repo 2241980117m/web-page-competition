@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="jquery/jquery-3.1.1.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link rel="shortcut icon" href="images/head.ico">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery/jquery-3.1.1.js"></script>
+    <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src = "https://cdn.wilddog.com/js/client/current/wilddog.js" ></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <title>当你遇上好电影</title>
+</head>
+<body>
+    <div class="box">
+        <input type="radio" name="radio-set" checked="checked" id="btn1">
+        <a href="#sub1">Home</a>
+        <input type="radio" name="radio-set" id="btn2">
+        <a href="#sub2">About</a>
+        <input type="radio" name="radio-set" id="btn3">
+        <a href="#sub3">Stars</a>
+        <input type="radio" name="radio-set" id="btn4">
+        <a href="#sub4">Movies</a>
+        <input type="radio" name="radio-set" id="btn5">
+        <a href="#sub5">Appraisements</a>
+        <div class="content">
+            <section class="sub" id="sub1">
+                <audio src="music/bgm.mp3" controls="controls" autoplay="autoplay"></audio>
+                <p class="meet">When You Meet Good Movies</p>
+                <img src="images/bg1.jpg" class="bg1">
+            </section>
+            <section class="sub" id="sub2">
+                <div id="cvr"></div>
+                <div class="div2" id="org">
+                    <h4>电影起源（Film Origin）</h4><hr/>
+                    <p>  电影是人类知道其确切产生时间和成长历程的艺术，是20世纪以来发展迅速、影响巨大的媒体，
+                        是政治、经济、文化三位一体的创意产业。从19世纪末开始，法国、美国及其他地区的电影发明家们相继
+                        发明了能摹拟人的眼睛和耳朵的光声记录和还原的技术和机器，这种电影技术从一诞生，就被企业家发展
+                        成为电影生意，被政治家发展成为意识形态，被艺术家发展成为电影艺术，被研究者发展成为电影理论。
+                        一部电影发展史同时也是电影人探索电影规律的历史。<br/><br/>
+                          电影语言及电影艺术的诞生和发展，与导演实践和理论探索息息相关，最初西洋镜杂耍的制
+                        作人是导演的雏形，随着对电影表现方式和电影特性的探索，相继出现了卢米埃尔兄弟、乔治·梅里爱、埃
+                        德温·鲍特和格里菲斯等早期的电影艺术探索者，这些电影先驱拓展了电影语言和电影创意的可能性。早期
+                        的电影创作、电影经营和电影探索是三位一体的，此时，电影制作者同时也是电影语言的探索者，还是电影
+                        的经营者，是具有完备职能的电影人雏形。
+                    </p>
+                    <button>返回</button>
+                </div>
+                <div class="div2" id="hst">
+                    <h4>发展历史（History Development）</h4><hr/>
+                    <p><b>① 形成期（1895-1927）</b>卢米埃尔创造了最早的新闻片、旅游片、纪录片、喜剧片等影片样式。
+                        1908年，世界上第二座影城——好莱坞也在拍摄《基度山伯爵》时初具雏形。1913-1926年，无声
+                        电影走向成熟。
+                    </p>
+                    <p><b>② 成熟期（1927-1945）</b>1927年是电影史上具有划时代意义的一年。《爵士歌王》影片的诞生标志
+                        着有声电影时代的来临，同时也是电影走向成熟期的标志。1935年，马摩里安摄制了世界上第一部彩色故
+                        事片《浮华世界》。彩色电影的问世，标志着电影从诞生发展达到了完善成熟的发展时期，从此电影艺术进入了新的发展阶段。
+                    </p>
+                    <p><b>③ 发展期（1945-1960）</b>这一时期世界电影史上有着重要影响的是意大利的新现实主义电影。新现实主义
+                        电影在五十年代中期衰落，但对推动电影艺术的发展，是起到极其重大的作用的。
+                    </p>
+                    <p><b>④ 多样化（1960-今）</b>这一时期，香港电影发展到充斥着整个中南亚电影市场，并影响着整个大陆的局面。所以，
+                        本时期世界电影已由过去的四足分立并进变成了全球性大发展。
+                    </p>
+                    <button>返回</button>
+                </div>
+                <div class="div2" id="gns">
+                    <h4>电影分类（Film Genres）</h4><hr/>
+                    <p><b>按照排序</b> 今日热播|本周热播|历史热播|最新上映|用户好评|会员|独家|正在上映|付费|免费</p>
+                    <p><b>按照地区</b> 内地|香港|台湾|美国|日本|韩国|英国|法国|德国|意大利|西班牙|俄罗斯|加拿大|印度|泰国 </p>
+                    <p><b>按照类型</b> 动作电影|奇幻电影|喜剧电影|恐怖电影|冒险电影|爱情电影|警匪电影|科幻电影|战争电影|灾难电影<br/><br/>
+                                      史诗电影|实验电影|微电影|微动漫电影|悬疑电影|音乐电影|黑帮电影|纪录电影|公路电影|动画电影|温情电影<br/><br/>
+                                      惊悚电影|西部电影|人物电影|飞车电影|家庭电影|超级英雄电影</p>
+                    <p><b>按照年份</b> 2017 2016 2015 2014 2013 2012 2011 2010 00年代 90年代 80年代 更早</p>
+                    <button>返回</button>
+                </div>
+                <div class="div2" id="prize">
+                    <h4>电影奖项（Film Award）</h4><hr/>
+                    <p><b>美国奥斯卡电影金像奖（Academy Awards）</b>美国电影艺术与科学学院奖（Academy Awards），
+                        英文缩写为AA,简称奥斯卡金像奖（Oscars），世界著名电影奖项。1928年设立，每年一次在美国洛杉矶
+                        好莱坞举行，半个多世纪一直享有盛誉。</p>
+                    <p><b>欧洲电影奖（European Film Awards）</b>1988年欧洲电影奖。该奖的宗旨是永久树立欧洲各国都遵循的电影的艺术精神，意在唤醒全球观众对
+                        欧洲艺术人文电影的信心及支持。原来欧洲电影奖总部一直设在德国柏林，进入90年代后期，欧洲电影奖
+                        打破了地域限制，把十年庆典移师伦敦。2000年欧洲电影奖在法国的巴黎举行。</p>
+                    <p><b>法国凯撒奖（César Awards）</b>法国国内电影的最高评奖，有“法国奥斯卡”之称，由法国电影艺术与
+                        技术学会和法国电视二台合作举办。并组织评选投票产生。它以法国著名雕塑家巴勒达西尼·凯撒命名（因
+                        凯撒奖奖座由他设计）。始于1976年，每年一届。首届设13个单项奖，即最佳法国片、导演、编剧、男女
+                        主角等。1982年开始增设最佳处女作奖。1984年又增设最佳男女青年演员希望奖。</p>
+                    <p><b>美国电影金球奖（Golden Globes）</b>金球奖始自1943年，由好莱坞外国记者协会主办，是美国影视界
+                        最重要的奖项之一，金球奖共设有24个奖项，金球奖的被提名者名单通常是在圣诞节前公布，颁奖晚会则
+                        选在一月中旬举行。
+                    </p>
+                    <button>返回</button>
+                </div>
+                <h2>—— About Movies ——</h2>
+                <div class="ban"></div>
+                <div id="box2">
+                    <div class="about" id="origin">
+                        <h3>电影起源<br/>The Origin</h3>
+                        <img src="images/21.jpg">
+                        <p>
+                            电影是人类知道其确切成长历程的艺术，是20世纪以来发展迅速、影响巨大的媒体。是政治、
+                            经济、文化三位一体的创意产业。
+                        </p>
+                        <input type="button" value="更多+">
+                    </div>
+                    <div class="about" id="history">
+                        <h3>发展历史<br/>Development</h3>
+                        <img src="images/22.jpg">
+                        <ul>
+                            <li>① 形成期（1895-1927）</li>
+                            <li>② 成熟期（1927-1945）</li>
+                            <li>③ 发展期（1945-1960）</li>
+                            <li>④ 多样化（1960-今）</li>
+                        </ul>
+                        <input type="button" value="更多+">
+                    </div>
+                    <div class="about" id="genres">
+                        <h3>电影分类<br/>Film Genres</h3>
+                        <img src="images/23.jpg">
+                        <ul>
+                            <li>
+                                ☞ 按照排序
+                            </li>
+                            <li>
+                                ☞ 按照地区
+                            </li>
+                            <li>
+                                ☞ 按照类型
+                            </li>
+                            <li>
+                                ☞ 按照演员
+                            </li>
+                        </ul>
+                        <input type="button" value="更多+">
+
+                    </div>
+                    <div class="about" id="award">
+                        <h3>电影奖项<br/>Film Awards</h3>
+                        <img src="images/24.jpg">
+                        <ul>
+                            <li>美国奥斯卡电影金像奖</li>
+                            <li>欧洲电影奖</li>
+                            <li>法国凯撒奖</li>
+                            <li>美国电影金球奖</li>
+                        </ul>
+                        <input type="button" value="更多+">
+
+                    </div>
+                </div>
+            </section>
+            <section class="sub" id="sub3">
+                <h2>The stars you can't forget</h2>
+                <div id="box3">
+                    <div id="photo">
+                        <ul>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>保罗·沃克（Paul Walker）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《速度与激情》（系列）</li>
+                                        <li>《南极大冒险》</li>
+                                        <li>《头骨俱乐部》</li>
+                                        <li>《碧海追踪》</li>
+                                        <li>《赛车风云》</li>
+                                        <li>《壁橱里的怪物》</li>
+                                        <li>《暴力街区》</li>
+                                        <li>《生死救婴》</li>
+                                        <li>《撕裂记忆体》</li>
+                                        <li>《劫匪》</li>
+                                        <li>《当铺大乱斗》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/30.jpg" />
+                                <p>保罗·沃克（Paul Walker），1973年9月12日出生于加利福尼亚格兰岱尔市，美国演员、模特。</p>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>奥黛丽·赫本<br/>（Audrey Hepburn）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《罗马假日》</li>
+                                        <li>《窈窕淑女》（歌舞片）</li>
+                                        <li>《蒂凡尼的早餐》</li>
+                                        <li>《直到永远》</li>
+                                        <li>《荷兰七课》（纪录片）</li>
+                                        <li>《龙凤配》</li>
+                                        <li>《谜中谜》</li>
+                                        <li>《修女传》</li>
+                                        <li>《天堂里的笑声》</li>
+                                        <li>《野燕麦》</li>
+                                        <li>《战争与和平》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/31.jpg" />
+                                <p>奥黛丽·赫本（Audrey Hepburn），1929年5月4日出生于比利时布鲁塞尔，英国电影和舞台剧女演员。</p>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>梅尔·吉布森<br/>（Mel Columcille Gerard Gibson）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《勇敢的心》</li>
+                                        <li>《敢死队3》</li>
+                                        <li>《血战钢锯岭》</li>
+                                        <li>《耶稣受难记》</li>
+                                        <li>《爱国者》</li>
+                                        <li>《蒂姆爱我》</li>
+                                        <li>《致命武器》</li>
+                                        <li>《疯狂的麦克斯》</li>
+                                        <li>《破晓时刻》</li>
+                                        <li>《电线上的鸟》</li>
+                                        <li>《绑票通缉令》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/314.jpg" />
+                                <P>梅尔·吉布森（Mel Columcille Gerard Gibson），1956年1月3日出生于纽约州，美国男演员、导演及制片人。</P>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>斯嘉丽·约翰逊<br/>（Scarlett Johansson）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《复仇者联盟》</li>
+                                        <li>《迷失东京》</li>
+                                        <li>《戴珍珠耳环的少女》</li>
+                                        <li>《她》</li>
+                                        <li>《美国队长》</li>
+                                        <li>《曼尼和罗》</li>
+                                        <li>《超体》</li>
+                                        <li>《奇幻森林》</li>
+                                        <li>《幽灵世界》</li>
+                                        <li>《保姆日记》</li>
+                                        <li>《攻壳机动队》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/32.jpg" />
+                                <p>斯嘉丽·约翰逊（Scarlett Johansson），1984年11月22日生于纽约，美国女演员。</p>
+                            </li>
+                            <li class="n2">
+                                <div class="right">
+                                    <h3>布拉德·皮特（Brad Pitt）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《搏击俱乐部》</li>
+                                        <li>《燃情岁月》</li>
+                                        <li>《七宗罪》</li>
+                                        <li>《史密斯夫妇》</li>
+                                        <li>《夜访吸血鬼》</li>
+                                        <li>《加州杀手》</li>
+                                        <li>《十一罗汉》</li>
+                                        <li>《神枪手之死》</li>
+                                        <li>《温柔的杀戮》</li>
+                                        <li>《黑金杀机》</li>
+                                        <li>《间谍同盟》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/33.jpg" />
+                                <p>布拉德·皮特（Brad Pitt），1963年12月18日出生于美国俄克拉何马州，美国电影演员、制片人。</p>
+                            </li>
+                            <li class="n3">
+                                <div class="right">
+                                    <h3>娜塔丽·波特曼<br/>（Natalie Portman）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《这个杀手不太冷》</li>
+                                        <li>《黑天鹅》</li>
+                                        <li>《偷心》</li>
+                                        <li>《V字仇杀队》</li>
+                                        <li>《美丽佳人》</li>
+                                        <li>《星球大战前传三部曲》</li>
+                                        <li>《雷神2：黑暗世界》</li>
+                                        <li>《盗火线》</li>
+                                        <li>《大家都说我爱你》</li>
+                                        <li>《火星人玩转地球》</li>
+                                        <li>《雷神》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/34.jpg" />
+                                <p>娜塔丽·波特曼（Natalie Portman），1981年6月9日出生于以色列耶路撒冷，美国演员。</p>
+                            </li>
+                            <li class="n4">
+                                <div class="right">
+                                    <h3>蒂姆·罗宾斯（Tim Robbins）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《肖申克的救赎》</li>
+                                        <li>《神秘河》</li>
+                                        <li>《超级大玩家》</li>
+                                        <li>《玩具兵》</li>
+                                        <li>《百万金臂》</li>
+                                        <li>《金钱帝国》</li>
+                                        <li>《再无可失》</li>
+                                        <li>《火星任务》</li>
+                                        <li>《代码46》</li>
+                                        <li>《真实电影》</li>
+                                        <li>《犯罪生活》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/35.jpg" />
+                                <p>蒂姆·罗宾斯（Tim Robbins），1958年10月16日生于加州，美国男演员、导演、编剧及制片人。</p>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>苏菲·玛索（Sophie Marceau）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《初吻》</li>
+                                        <li>《勇敢的心》</li>
+                                        <li>《芳芳》</li>
+                                        <li>《安娜卡列尼娜》</li>
+                                        <li>《超级女特工》</li>
+                                        <li>《心火》</li>
+                                        <li>《不要回头》</li>
+                                        <li>《007之黑日危机》</li>
+                                        <li>《卢浮魅影》</li>
+                                        <li>《当爱变成习惯》</li>
+                                        <li>《豪情玫瑰》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/36.jpg" />
+                                <p>苏菲·玛索（Sophie Marceau），1966年11月17日出生于法国巴黎，法国演员、导演、编剧。</p>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>小罗伯特·唐尼<br/>（Robert Downey Jr.）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《钢铁侠系列》</li>
+                                        <li>《卓别林》</li>
+                                        <li>《大侦探福尔摩斯》</li>
+                                        <li>《复仇者联盟系列》</li>
+                                        <li>《预产期》</li>
+                                        <li>《甜心俏佳人》</li>
+                                        <li>《热带惊雷》</li>
+                                        <li>《法官老爹》</li>
+                                        <li>《美国队长3》</li>
+                                        <li>《蜘蛛侠》</li>
+                                        <li>《恶搞之家》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/37.jpg" />
+                                <p>小罗伯特·唐尼（Robert Downey Jr.），1965年4月4日出生于美国纽约州纽约市，美国电影演员、制片人。</p>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>费雯·丽（Vivien Leigh）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《乱世佳人》</li>
+                                        <li>《魂断蓝桥》</li>
+                                        <li>《欲望号街车》</li>
+                                        <li>《汉密尔顿夫人》</li>
+                                        <li>《欣欣向荣》</li>
+                                        <li>《仰面大笑》</li>
+                                        <li>《英伦浩劫》</li>
+                                        <li>《牛津风云》</li>
+                                        <li>《罗密欧与茱丽叶》</li>
+                                        <li>《凯萨与克丽奥佩拉》</li>
+                                        <li>《蔚蓝深海》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/38.jpg" />
+                                <P>费雯·丽（Vivien Leigh），1913年11月5日出生于英属印度西孟加拉邦大吉岭，原名费雯·玛丽·哈特利，英国电影和舞台剧演员。</P>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>汤姆·克鲁斯（Tom Cruise）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《碟中谍系列》</li>
+                                        <li>《夜访吸血鬼》</li>
+                                        <li>《壮志凌云》</li>
+                                        <li>《木兰花》</li>
+                                        <li>《雨人》</li>
+                                        <li>《生于七月四日》</li>
+                                        <li>《甜心先生》</li>
+                                        <li>《好人寥寥》</li>
+                                        <li>《大开眼戒》</li>
+                                        <li>《行动目标希特勒》</li>
+                                        <li>《香草的天空》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/39.jpg" />
+                                <p>汤姆·克鲁斯（Tom Cruise），1962年7月3日出生于美国纽约州，美国电影演员、电影制片人。</p>
+                            </li>
+                            <li class="wait">
+                                <div class="right">
+                                    <h3>凯特·温斯莱特<br/>（Kate Winslet）</h3>
+                                    <h4>出演作品：</h4>
+                                    <ul>
+                                        <li>《泰坦尼克号》</li>
+                                        <li>《生死朗读》</li>
+                                        <li>《美丽心灵的永恒阳光》</li>
+                                        <li>《理智与情感》</li>
+                                        <li>《身为人母》</li>
+                                        <li>《欲海情魔》</li>
+                                        <li>《携手人生》</li>
+                                        <li>《恋爱假期》</li>
+                                        <li>《分歧者：异类觉醒》</li>
+                                        <li>《附属美人》</li>
+                                        <li>《我们之间的那座山》</li>
+                                    </ul>
+                                </div>
+                                <img src="images/310.jpg" />
+                                <p>凯特·温斯莱特（Kate Winslet），1975年10月5日出生于英国伯克郡，英国影视女演员。</p>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <span class="bton lbtn">←</span>
+                            <span class="bton rbtn">→</span>
+                        </div>
+                    </div>
+                    <div id="right"></div>
+                </div>
+            </section>
+            <section class="sub" id="sub4">
+                    <figure class="test1">
+                        <img src="images/411.jpg">
+                        <figcaption class="fig1">
+                            <p>教父</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="test2" >
+                        <img src="images/422.jpg">
+                        <figcaption class="fig2">
+                            <p>乱世佳人</p>
+                            <div></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="test3">
+                        <img src="images/433.jpg">
+                        <figcaption class="fig3">
+                            <p>海上钢琴师</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="test4">
+                        <img src="images/444.jpg">
+                        <figcaption class="fig4">
+                            <p>初吻</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="test5">
+                        <img src="images/455.jpg">
+                        <figcaption class="fig5">
+                            <p>肖申克的救赎</p>
+                            <div></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="test6">
+                        <img src="images/466.jpg">
+                        <figcaption class="fig6">
+                            <p>放牛班的春天</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="test7">
+                        <img src="images/477.jpg">
+                        <figcaption class="fig7">
+                            <p>这个杀手不太冷</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="test8">
+                        <img src="images/488.jpg">
+                        <figcaption class="fig8">
+                            <p>爱乐之城</p>
+                            <div></div>
+                        </figcaption>
+                    </figure>
+                    <figure class="test9">
+                        <img src="images/499.jpg">
+                        <figcaption class="fig9">
+                            <p>音乐之声</p>
+                        </figcaption>
+                    </figure>
+            </section>
+
+            <section class="sub" id="sub5">
+                <div id="slide">
+                    <div id="slide1" class="sld">
+                        <span id="up1">▼Massage①</span>
+                        <div class="down1">
+                            <p>《肖申克的救赎》毫无疑问是一部好片子，没有动作,没有特技,甚至没有美人，却依然能深深打动观众,并且历经十几年而魅力不减。</p>
+                        </div>
+                    </div>
+                    <div id="slide2" class="sld">
+                        <span id="up2">▼Massage②</span>
+                        <div class="down2">
+                            <p>阿甘天生注定不是一个出类拔萃的人。但上天又如此公平，它令起点不高的人比天生优越感十足的人更早，更深刻地认识到生活的真实。</p>
+                        </div>
+                    </div>
+                    <div id="slide3" class="sld">
+                        <span id="up3">▼Massage③</span>
+                        <div class="down3">
+                            <p>《美丽人生》所谓美丽，除非是从心而生，亦即意志控制的结果。所以，“美丽人生”，实则是通过意志控制得来的美丽人生。</p>
+                        </div>
+                    </div>
+                    <div id="slide4" class="sld">
+                        <span id="up4">▼Massage④</span>
+                        <div class="down4">
+                            <p>1972年发生了这么几件历史性的事。尼克松访华了、慕尼黑惨案了、阿波罗登月计划完结了；还有就是，科波拉的《教父》上映了。</p>
+                        </div>
+                    </div>
+                    <div id="slide5" class="sld">
+                        <span id="up5">▼Massage⑤</span>
+                        <div class="down5">
+                            <p>《天使爱美丽》中的插曲，手风琴，我喜欢。最后的曲子用了钢琴，我想是为了圆满画上句号的意味吧。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="lyq">
+                        <img src="images/52.jpg">
+                        <div class="lyq_screen" >
+                            <div class="lyq_mask">
+                                <div class="lyq_show">
+                                    <!--<div>text message</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="send">
+                        <div class="s_fiter">
+                            <div class="s_con">
+                                <p>
+                                    <input type="text" class="s_txt" placeholder="你这么好看就没有什么话想说嘛？"/>
+                                </p>
+                                <p>
+                                    <button class="s_send">Send</button>
+                                    <button class="s_clear">Clear</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

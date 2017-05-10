@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.f1{
+   float: left;
+}
+.f2{
+    float: right;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.f3{
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 14px;
+}

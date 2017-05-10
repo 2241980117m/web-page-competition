@@ -1,0 +1,294 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>现代科技——AI与纳米技术</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$(".sl").click(function(){
+        $(".sl").hide();
+        $(".sl2").show();
+		$("#section,#header,#footer,.mid,.mid2").animate({
+			left:'+=30%',
+            maxWidth:'70%'
+		},1000,function(){
+			$(".sanjiao").show(500,function(){
+            $(".a2").animate({
+                bottom:'15vh'
+            },1000,function(){
+            $(".a1").animate({
+                top:'25vh'
+            },1000);});});
+		});
+	});
+	});
+    $(document).ready(function(){
+        $(".sl2").click(function(){
+        $(".sl2").hide();
+        $(".sl").show();
+        $("#section,#header,#footer,.mid,.mid2").animate({
+            left:'-=30%',
+            maxWidth:'100%'
+        },1000,function(){
+            $(".sanjiao").hide(10,function(){
+            $(".a1").animate({
+                top:'-10rem'
+            },10,function(){
+            $(".a2").animate({
+                bottom:'100vh'
+            },10);});});
+        });
+    });
+    });
+    $(document).ready(function(){
+        if(!$(".content").is(":animated")){ 
+        $(".a1").mouseover(function(){
+        $(".down").animate({
+            top:'0%'
+        },1000);
+    });
+    } ;
+    });
+    $(document).ready(function(){
+        if(!$(".content").is(":animated")){  
+ 
+        $(".down").mouseout(function(){
+        $(".down").animate({
+            top:'-10rem'
+        },1000);
+    });
+    };
+    });
+     $(document).ready(function(){
+        $(".a2").mouseover(function(){
+        $(".up").animate({
+            top:'0%'
+        },1000);
+    });
+    });
+    $(document).ready(function(){
+        $(".up").mouseout(function(){
+        $(".up").animate({
+            top:'-10rem'
+        },1000);
+    });
+    });
+	</script>
+<style>
+    body
+        {
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            background-image:url(images/w2.jpg); 
+            background-size: 100% 100%;
+        }
+        
+    #con{
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;  
+        background-color: rgba(0,0,0,0.3); 
+    }
+    .h{
+        float:center;
+        font-size:60px;
+    }
+    #header{
+        margin: 0;
+        padding: 0;
+        background-color:gray;
+        background-color: rgba(0,0,0,0.3);       
+        width:100%;
+        max-width: 100%;
+        height:10%;
+        font-size:3rem;
+        font-family: head;
+        color: white;
+        text-align: center;
+        position: absolute;
+    }
+    
+    #section{
+        opacity: 0.9;
+        margin:0;
+        width:30%;
+        height:100%;
+        max-width: 100%;
+        float:left;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:4px;
+        text-align:left;
+        position: absolute;
+        top: 0;
+        left: -30%;
+        background-image: url(images/caidan2.jpg);
+    }
+         @font-face
+    {
+        font-family: head;
+        src:url(font/font3/Poiret_One/PoiretOne-Regular.ttf);
+    }
+        @font-face
+        {
+            font-family: mid;
+            src:url(font/font6/UnifrakturCook/UnifrakturCook-Bold.ttf);
+        }
+        @font-face
+        {
+            font-family: mid2;
+            src:url(font/font6/Tangerine/Tangerine_Bold.ttf);
+        }
+    .lakai img
+    {
+        cursor: pointer;
+        transition: rotateX 1s;
+        -webkit-transition:rotateX 1s, -webkit-transform 1s;
+    }
+    .lakai img:hover
+    {
+        transform: rotateX(540deg);
+        -webkit-transform:rotateX(540deg); 
+    }
+    .a1
+    {
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        opacity: 0.7;
+        top: -10rem;
+        margin-left: -5rem;
+        left: 50%;
+        background-image: url(images/c1.jpg);
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    .a2
+    {
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        opacity: 0.7; 
+        left:50%;
+        margin-left: -5rem; 
+        bottom: 100%;
+        background-image: url(images/c2.jpg);
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    .mid
+    {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        font-size: 10rem;
+        font-family: mid;
+        text-shadow: 0.3rem 0.3rem 0.3rem black;
+        color: #FFC125;
+        text-align: center;
+        top: 30%;
+        padding: 0;
+        margin: 0;
+    }
+    .mid2
+    {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        font-size: 3rem;
+        font-family: mid2;
+        text-shadow: 0.3rem 0.3rem 0.3rem black;
+        color: white;
+        text-align: center;
+        top: 52%;
+        padding: 0;
+        margin: 0;
+    }
+    .sanjiao {
+        display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-top: 6rem solid #FFC125;
+    left: 50%;
+    margin-left: -6rem;
+    text-align: center;
+    }
+    .sanjiao p
+    {
+        font-size: 2.2rem;
+        position: absolute;
+        top: -6rem;
+        left: -3rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0.3rem 0.3rem 0.3rem black;
+        padding: 0;
+        margin: 0;
+    }
+    .sl
+    {
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+        opacity: 0.7;
+        margin-top: -2rem;
+    }
+     .sl2
+    {
+        opacity: 0.7;
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        top: 50%;
+        right: -2rem;
+        display: none;
+        margin-top: -2rem;
+    }
+    .a1 img
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 100%;
+    }
+    .a2 img
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 100%;
+    }
+</style>
+</head>
+<body>
+<div id="con">
+    <div id="header">
+        <h class="st"> <center>Science and Technology</center></h>
+    </div>
+    <p class="mid">Science</p>
+    <p class="mid2">is endless,it is an eternal mystery。</p>
+    <div id="section"> 
+        <div class="sanjiao">
+            <p>select</p>
+        </div>
+        <div class="a1"><a href="ai.html"><img class="down" src="images/ch(1).png"></a></div>
+        <div class="a2"><a href="nc.html"><img class="up" src="images/ch(2).png"></a></div>
+        <div class="lakai">
+        <img class="sl" src="images/wmp.png">
+        <img class="sl2" src="images/wmp2.png">
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Joe Hisaishi</title>
+  <link rel="shortcut icon" type="text/css" href="images/龙猫.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="header">
+    <p>A Pure world</p>
+  </div>
+
+  <div class="box">
+    <svg>
+      <pattern id="water" width=".25" height="1" patternContentUnits="objectBoundingBox">
+        <path fill="#45759B" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+      </pattern>
+      <text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="80">Hisaishi's Music World</text>
+      <mask id="text-mask">
+        <use x="0" y="0" xlink:href="#text" opacity="1" fill="#FFFFFF"/>
+      </mask>
+      <g id="eff">
+      <use x="0" y="0" xlink:href="#text" fill="#FFFFFF"/>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+      </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+      </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+      </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+      </rect>
+        </g>
+        <use xlink:href="#FFFFFF" opacity="0.6" style="mix-blend-mode:color-burn"/>
+    </svg>
+    <div class="back">
+    <div class="type">
+      <p>Let's Begin</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-first">
+      <img src="images/sky.jpg" alt="">
+      <div class="content-first-right">
+        <h1>City of sky</h1>
+        <p>Now people always think that the sky city is a sad love song, in fact, the sky, the sky is the expression of the city in the sky of the sadness of the disappeared. People at IMTV for their own greed, sky city people in order to protect their homes, eventually personally ruined the beauty of the sky city.</p>
+        <div class="btn btn1"><p>READMORE<p></div>
+      </div>
+    </div>
+
+    <div class="content-second">
+      <div class="content-second-left">
+        <h1>Spirited away</h1>
+        <p>"Spirited away" is directed by Hayao Miyazaki, screenwriter, Studio Ghibli animated film, the film was officially released in Japan in July 20, 2001, tells the girl Chihiro meaning outside to the spiritual world after the story of god. The film won the 2003 Oscar Award for the best long animation, but also the history of the first so far is the only one to obtain the identity of the film in Europe.</p>
+        <div class="btn btn1"><p>READMORE<p></div>
+      </div>
+      <img src="images/thousands.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="fixed-back">
+    <h1>Summer</h1>
+    <p>Takeshi directed and starred in the fresh warmth of the film, starring Takeshi, Kishimoto Kayoko Yoshiroyuki Kazuko, who starred in, released in Japan in June 5, 1999. The story of the third grade primary school students are male (Sekiguchi Yusuke) and Kikuji Ro (Takeshi ornaments) on the way to find the divorced mother's story, with the male have a subtle relationship, and it has been the male Angel bell and out of the shadows of the story.</p>
+    <div class="btn"><p>READMORE<p></div>
+  </div>
+
+  <div class="bar">
+    <h1>Hisaishi and Hayao Miyazaki</h1>
+    <p>Whether Hayao Miyazaki or Hisaishi, are straightforward and the nature of the people, even in the creation, there is no strong purpose. The cooperation between the two is based entirely on the art of cavity enthusiasm and genius. Hayao Miyazaki likes to "cast a net" in the ocean of the mind, "net" to what, as a starting point for the creation of. Hisaishi used to acquire music inspiration when drinking, eating, bathing, toilet.</p>
+    <div class="btn btn1"><p>READMORE</p></div>
+  </div>
+  
+
+  <div class="message">
+    <h1>About Joe Hisaishi</h1>
+    <p>Nunc sit amet lobortis nulla. Nunc ullamcorper, mi id luctus dictum, augue tortor dictum ipsum, nec congue arcu lorem in nisl. Duis neque lacus, viverra non mauris ac, pharetra rhoncus libero. Aliquam varius viverra ex, in venenatis magna ornare sit amet. Integer varius sit amet turpis eu ullamcorper.</p>
+    <div>
+      <img src="images/head.png" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot_container">
+      <p>Copyright © 2017 Zhangyangyang</p>
+    </div>
+  </footer>
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!-- <script type="text/javascript" src="js/index.js"></script> -->
+</body>
+</html>

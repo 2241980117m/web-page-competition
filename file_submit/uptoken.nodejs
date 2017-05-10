@@ -1,0 +1,16 @@
+public Object createToken(FileModel record,Boolean openCallBack ) throws Exception {
+
+    Config.ACCESS_KEY = AppConfig.getInstance().getQiniuAccessKey();
+    Config.SECRET_KEY = AppConfig.getInstance().getQiniuSecretKey();
+    mac = new Mac(Config.ACCESS_KEY, Config.SECRET_KEY);
+    AppConfig.getInstance().setQiniuBucketName(record.getBucketType());
+    putPolicy = new PutPolicy(AppConfig.getInstance().getQiniuBucketName());
+    putPolicy.saveKey = createSaveKey(record);
+    putPolicy.callbackUrl=createCallbackUrl(record.getOpenCallBack());
+    putPolicy.callbackBody=createCallbackBody(record);
+    putPolicy.returnBody=createReturnBody(record);
+    uptoken = putPolicy.token(mac);
+    TokenModel obj=new TokenModel();
+    obj.setUptoken(uptoken);
+    return obj;
+}

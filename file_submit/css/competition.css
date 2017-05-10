@@ -1,0 +1,299 @@
+﻿#sign{
+	display: block;
+
+}
+#competition-rules{
+	display: none;
+	margin-bottom: 2em;
+}
+#submit_file{
+	display: none;
+}
+ul li{
+	list-style: none;
+	line-height:2em; 
+	color:#3B3B3B;	
+}
+div#process{
+	width: 100%;
+}
+#file:hover{
+	cursor: pointer;
+}
+.btn-myself{
+	
+	width:14%;
+	display:inline-block;
+	padding: 0;
+	line-height: 3em;
+	background:rgb(255, 155, 34);
+	color: #FFF;
+	
+}
+.btn-myself:hover{
+	border: 0;
+	color: #FFF;
+}
+.choose{
+	margin-bottom: 0;
+
+}
+.Width{
+	width: 60%;
+}
+#tip{
+	padding-top: 2%;
+	margin-bottom: 5%;
+}
+#tip li{
+	list-style: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.head{
+	  font-family: 'Poiret One', sans-serif;
+	   font-size:2em;
+	   color:#8D8C8C;	
+}
+.information{
+	font-size:1.5em;
+	color:#D0CFCF;
+}
+.border{
+	border: 1px solid #D5D4D4;
+	border-radius: 5px;
+	height:auto;
+	padding: 3% 10% 5% 10%;
+	margin:0 auto;
+	/*margin-top:-1.5em;*/
+
+
+}
+.{
+	color:#7F7F7F;
+	
+}
+.file-font{
+	color:#fff;
+	font-size: 1.2em;
+}
+.Height{
+	margin-bottom: 2%;
+}
+ .submit{
+	margin-left:20%;
+	margin-top:5%;
+	background:rgb(255, 155, 34);
+	color:#fff;
+}
+.check{
+	margin-top:5%;
+	background:rgb(255, 155, 34);
+	color:#fff;
+}
+#check{
+	margin-left:20%;
+	margin-top:5%;
+	background:rgb(255, 155, 34);
+	color:#fff;
+}
+#success-err{
+	margin-left:13%;
+	background: #FFDCDC;
+	border:0px solid ;
+	visibility: hidden;
+	text-align: center;
+	color:#FA7A7A;
+	width:55%;
+
+
+}
+#tishi{
+	color:red;
+	visibility: hidden;
+	line-height:2.5em;
+	
+}
+.download{
+	margin-left: 60%;
+	font-size: 1em;
+	/*color:#025564;*/
+}
+#file{
+	display: block;
+	border:0px solid #848484;
+	width:40%;
+	height: 40%;
+	background: #C9C8C8;
+	border-radius: 5px;
+	float: left;
+	margin-bottom: -39px;
+}
+#file:hover{
+	cursor: pointer;
+}
+.require{
+	border: 0px solid #848484;
+	width:50%;
+	height: 40%;
+	float: left;
+	margin-left: 5%;
+	font-size: 1em;
+	
+	padding: 3% 5% 0 5%;
+	line-height: 2em;
+	margin-bottom: 2em;
+	
+
+}
+.process-myself{
+	clear:both;
+	visibility: hidden;
+	
+	border: 1px solid #D8D7D7;
+	width:90%;
+	
+}
+.procsess-width{
+	
+	width:0%;
+	
+}
+
+#teamname{	
+}
+#shuru{
+	border: 0px solid #848484;
+	width:50%;
+	height: 6%;
+	float: left;
+	margin-left: 5%;
+	font-size: 1em;
+	/*color:#8F8D8D;*/
+	padding: 0 5% 0 5%;
+	line-height: 2em;
+	
+}
+@media(max-width:348px){
+	#shuru{
+		width: 56%;
+		position: absolute;
+	    border: 0px solid red;
+	    padding:0;
+	    margin-left: 0px;
+	}
+}
+@media(min-width: 349px) and (max-width: 590px){
+	#shuru{
+		width: 58%;
+		position: absolute;
+	    border: 0px solid red;
+	    padding:0;
+	    margin-left: 0px;
+	}
+}
+@media(min-width: 591px) and (max-width: 768px){
+	#shuru{
+	position: absolute;
+	border: 0px solid red;
+	width:60%;
+	padding:0;
+	margin-left: 0px;
+}
+}
+@media(max-width: 768px){
+.Width{
+	width: 80%;
+}
+.btn-myself{
+	width:30%;
+}
+.submit{
+	margin-left:0%;
+}
+.process-myself{
+	margin-left:5%;
+	
+}
+#success-err{
+	margin-left: 0;
+	width:80%;
+
+}
+.col-xs-12 {
+    width: 120%;
+}
+.download{	
+	font-size: 0.5em;
+}
+#file{
+	width:100%;
+	height: 20%;
+	margin-top:3em;
+}
+.require{
+	width:100%;
+	height:auto;
+	padding: 5% 5% 0 0%;
+	margin-top:3em;
+	font-size: 1em;
+}
+
+}
+@media(max-width: 1024px){
+	table{
+	margin-left: -9% !important;
+}
+}
+@media(min-width: 1025px){
+	table{
+	margin-left: 0px !important;
+}
+}
+@media(max-width: 1024px)and (min-width: 769px){
+.Width{
+	width: 80%;
+}
+.btn-myself{
+	width:30%;
+}
+.submit{
+	margin-left:15%;
+	width:50%;
+}
+#success-err{
+	margin-left: 15%;
+	width:50%;
+
+}
+.col-xs-12 {
+    width: 120%;
+}
+.download{	
+	font-size: 0.5em;
+}
+#file{
+	width:100%;
+	height: 20%;
+	margin-top:3em;
+}
+.require{
+	width:100%;
+	height:auto;
+	padding: 5% 5% 0 0%;
+	margin-top:1em;
+	font-size: 1em;
+}
+#shuru{
+	position: absolute;
+	top:21em;
+	border: 0px solid red;
+	width:61%;
+	padding:0;
+	margin-left: -0.1%;
+
+
+}
+
+}

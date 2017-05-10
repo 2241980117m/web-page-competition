@@ -1,0 +1,76 @@
+html,body,nav,div,span,p,form,input,button,ul,li,img,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	font-family:  'Open Sans', sans-serif;
+	background-color: #ccc;
+}
+body a {
+	text-decoration: none;
+	color: #000;
+}
+body a:hover {
+	text-decoration: none;
+	color: #000;
+}
+h1,h2,h3,h4,h5,h6,p {
+	font-weight: 400;
+}
+nav{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: #B7B2B2;
+	position: fixed;
+	z-index: 999;
+}
+.navul {
+	font-size: 14px;
+	font-weight: bolder;
+	margin: 0 auto;
+	height: 60px;
+	overflow: hidden;
+	width: 70%;
+	margin: 0 auto;
+}
+.navul a{
+	cursor: pointer;
+}
+.navul li {
+	display: inline-block;
+	list-style-type: none;
+	width: 16%;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+}
+.navul li:hover {
+	animation: navHover 1s;
+	background-color: #FFA400;
+}
+@keyframes navHover{
+	0% {background-color: #B7B2B2;}
+	100% {background-color: #FFA400;}
+}
+
+.navul li:hover:before{
+	content: "";
+	color: red;
+	width: 100px;
+	height: 100px;
+}
+.gototop{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	line-height: 80px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #FFA400;
+	bottom: 30px;
+	right: 5%;
+	cursor: pointer;
+	z-index: 999;
+}

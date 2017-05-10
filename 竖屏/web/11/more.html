@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Joe Hisaishi</title>
+  <link rel="stylesheet" href="./lib/css/reset.css">
+  <link rel="stylesheet" href="./lib/css/index.css">
+</head>
+<body>
+  <div class="header">
+    <p>Hisaishi's Music World</p>
+    <dl>
+      <dt>A Pure world</dt>
+    </dl>
+  </div>
+
+  <div class="box">
+    <svg>
+      <pattern id="water" width=".25" height="1" patternContentUnits="objectBoundingBox">
+        <path fill="#45759B" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+      </pattern>
+      <text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="80">Hisaishi's Music World</text>
+      <mask id="text-mask">
+        <use x="0" y="0" xlink:href="#text" opacity="1" fill="#FFFFFF"/>
+      </mask>
+      <g id="eff">
+      <use x="0" y="0" xlink:href="#text" fill="#FFFFFF"/>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+      </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+      </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+      </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="180" opacity="0.3">
+        <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+      </rect>
+        </g>
+        <use xlink:href="#FFFFFF" opacity="0.6" style="mix-blend-mode:color-burn"/>
+    </svg>
+    <div class="back">
+    <div class="type">
+      <p>Let's Begin</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-first">
+      <img src="./lib/img/skycity.jpg" alt="">
+      <div class="content-first-right">
+        <h1>天空之城</h1>
+        <p>现在的人们总是误以为天空之城是一首悲伤的情歌，其实错了，天空之城表达的是对消失的天空的城市的伤悲之情。人们为了自己的贪欲，不惜涂炭生灵，天空之城的人民为了保护家园，最终自己亲手毁了那个美丽的天空城市。</p>
+        <div class="btn"><p>READMORE<p></div>
+      </div>
+    </div>
+
+    <div class="content-second">
+      <div class="content-second-left">
+        <h1>千与千寻</h1>
+        <p>年仅10岁的荻野千寻是一个看起来非常普通的四年级小学生。然而，因为途中迷路，她和父母误闯入了一个人类不应该进入的灵异小镇。小镇的主管是当地一家叫“油屋”的澡堂的巫婆：汤婆婆；镇上有一条规定：在镇上凡是没有工作的人，都要被变成猪被吃掉。千寻的父母由于贪吃，未经过店员允许就随便触碰食物，而遭到惩罚变成了猪。</p>
+        <div class="btn"><p>READMORE<p></div>
+      </div>
+      <img src="./lib/img/thousands.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="fixed-back">
+    <h1>菊次郎的夏天</h1>
+    <p>北野武自编自导自演的清新温情的电影，影片由北野武、岸本加世子、吉行和子等人主演，于1999年6月5日在日本公映。故事讲述小学三年级学生的正男（关口雄介饰）在与菊次郎（北野武饰）一同寻觅其离异的母亲的故事的途中，跟正男产生微妙的关系，而正男亦因此得到“天使之铃”而走出阴霾的故事。</p>
+    <div class="btn"><p>READMORE<p></div>
+  </div>
+
+  <div class="bar">
+    <h1>久石让和宫崎骏</h1>
+    <p>无论是宫崎骏还是久石让，都是率真而随性的人，即使在创作上，也没有很强的目的性。两人的合作完全建立在对艺术的一腔热情和天才般的灵感上。宫崎骏喜欢在头脑的海洋中“撒网”，“网”到什么，就以什么为起点进行创作。而久石让更习惯在喝酒、吃饭、泡澡、上厕所的时候获得音乐灵感。</p>
+    <div class="btn"><p>READMORE</p></div>
+    <img src="./lib/img/22.jpg" alt="">
+  </div>
+  
+  <div class="more">
+    <h1>COLLECTION</h1>
+    <p>Hisaishi's Music World , collection show , wish U love it</p>
+    <div class="pic-box">
+      <img src="./lib/img/3.jpg" alt="">
+      <img src="./lib/img/4.jpg" alt="">
+      <img src="./lib/img/5.jpg" alt="">
+      <img src="./lib/img/6.jpg" alt="">
+      <img src="./lib/img/7.jpg" alt="">
+      <img src="./lib/img/8.jpg" alt="">
+      <img src="./lib/img/9.jpg" alt="">
+      <img src="./lib/img/10.jpg" alt="">
+      <img src="./lib/img/11.jpg" alt="">
+      <img src="./lib/img/12.jpg" alt="">
+      <img src="./lib/img/13.jpg" alt="">
+      <img src="./lib/img/14.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="message">
+    <h1>About Joe Hisaishi</h1>
+    <p>Nunc sit amet lobortis nulla. Nunc ullamcorper, mi id luctus dictum, augue tortor dictum ipsum, nec congue arcu lorem in nisl. Duis neque lacus, viverra non mauris ac, pharetra rhoncus libero. Aliquam varius viverra ex, in venenatis magna ornare sit amet. Integer varius sit amet turpis eu ullamcorper.</p>
+    <div>
+      <img src="./lib/img/head.png" alt="">
+    </div>
+  </div>
+
+  <div class="contact">
+    <p>Do you like that ? just contant with us</p>
+  </div>
+
+  <footer>
+    <div class="foot_container">
+      <p>Copyright © 2017 Zhangyangyang | More Templates</p>
+    </div>
+  </footer>
+  
+
+  <script type="text/javascript" src="./lib/js/jquery.js"></script>
+  <script type="text/javascript" src="./lib/js/index.js"></script>
+</body>
+</html>
