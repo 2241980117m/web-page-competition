@@ -106,21 +106,21 @@
 	</div>
 	
 	<div class="container  Width">
-		<!-- <header class="head"><center>网页设计大赛</center></header><hr> -->
-		<!--<input type="button" name="sign" class="btn  btn-myself choose" value="报名"  onclick="choose(name)" disabled="disabled">
+		<header class="head"><center>网页设计大赛</center></header><hr>
+		<input type="button" name="sign" class="btn  btn-myself choose" value="报名"  onclick="choose(name)">
 		<input type="button" name="rules" class="btn  btn-myself choose" value="比赛说明" onclick="choose(name);">
-	<input type="button" name="file" class="btn  btn-myself choose" value="作品提交" onclick="choose(name)" >-->
+			<input type="button" name="file" class="btn  btn-myself choose" value="作品提交" onclick="choose(name)" >
 		
 		<div class="row  border">
-			<!-- <label >网页设计大赛</label> -->
-			<!--<div id="sign"  style="display:none">
+			<label >网页设计大赛</label>
+			<div id="sign">
 				<center class="information">团队基本信息</center><hr>
-
+			
 				<div class="col-xs-12 Height ">
 						<label class="font">团队名称</label>
 						<input type="text" name="TeamName" placeholder="Team:" class="form-control">
-
-
+			
+			
 					</div>
 					<div class="col-xs-12 Height" >
 						<label class="font">联系方式</label>
@@ -135,20 +135,20 @@
 						
 						<input type="text" name="TeamName" placeholder="请输入验证码" style="border-radius:5px;text-indent:10px;" class=" test-shuru">
 						<!-- <label class="font">验证码</label> -->
-						<!-- <input type="button" name="" value="获取验证码"> 
+						<!-- <input type="button" name="" value="获取验证码">  -->
 						<button class="test">获取验证码 </button>
 					</div>
-
+			
 					<div class="col-xs-12">
 						<input type="text" name="success" value=""  id="success-err"  disabled="disabled">
 					</div>
 					<div class="col-md-6 col-xs-12">
 						<input type="button" name="submit" value="提交信息" class=" btn form-control submit">
 					</div>
-
-
-			</div>-->
-		<!--	<div id="competition-rules" style="display:block">
+			
+			
+			</div>
+					<div id="competition-rules">
 				<center class="information">比赛细则</center><hr>
 				
 				<ul style="margin-left: -11%;">
@@ -161,14 +161,14 @@
 					<li>四、奖项设置:<br />
 					<span>(1)  每组一、二、三等奖各一名，优秀奖各两名</span><br />
 					<span>(2) 所有参赛人员均可获得精美纪念品</span><br />
-		<span>(3)  比赛中表现突出成员还有机会获得由甲骨文提供的实习机会</span>
+					<span>(3)  比赛中表现突出成员还有机会获得由甲骨文提供的实习机会</span>
 					</li>
 					<li></li><br />
 				</ul>
 				
 				<label class="download"><a href="比赛须知.docx" style="color:#e49d17;"> 比赛要求和参赛要求附件下载</a></label>
-			</div>-->
-			<div id="submit_file" style="display:block">
+			</div>
+			<div id="submit_file">
 				<center class="information">作品提交</center><hr>
 			   <!-- <div id="sub">
 			   				<div id="file" class="file-font">
@@ -293,8 +293,8 @@
 	<script src="js/headroom.min.js"></script>
 	<script src="js/jQuery.headroom.min.js"></script>
 	<script src="js/template.js"></script>
-   <!--  <script type="text/javascript">/**/
-  //  var sign=document.getElementById('sign');
+<script type="text/javascript">/**/
+    var sign=document.getElementById('sign');
 	var rules=document.getElementById('competition-rules');
 	var submit_file=document.getElementById('submit_file');
 
@@ -302,18 +302,18 @@
 			if(name=='sign'){
 				submit_file.style.display="none";
 				rules.style.display="none";
-				//sign.style.display="block"
+				sign.style.display="block"
 			}else if(name=='rules'){
 				submit_file.style.display="none"
 				rules.style.display="block"
-			//	sign.style.display="none"
+				sign.style.display="none"
 			}else{
 				submit_file.style.display="block"
 				rules.style.display="none"
-			//	sign.style.display="none"
+				sign.style.display="none"
 			}
 		}
-     </script>-->
+  </script>
     <script src="js/competition.js" type="text/javascript"></script>
     <script>$(function () {$('[data-toggle="popover"]').popover()})</script>
 	<script type="text/javascript" src="js/plupload.full.min.js"></script>

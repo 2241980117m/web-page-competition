@@ -1,15 +1,15 @@
 window.onload = function(){
-	/*var sign = document.getElementById('sign');
+	var sign = document.getElementById('sign');
 	var rules = document.getElementById('competition-rules');
 	var submit_file = document.getElementById('submit_file');
 	var Input = document.getElementsByTagName('input');
-	var obtn = document.getElementsByClassName("btn form-control submit")[0];*/
+	var obtn = document.getElementsByClassName("btn form-control submit")[0];
 	var tishi = document.getElementById('tishi');
 	var check = document.getElementsByClassName("btn check")[0];
 	var script;
-    //var testbtn = document.getElementsByTagName('button')[1];
+    var testbtn = document.getElementsByTagName('button')[1];
     	//清空作用
-    	/*Input[3].onfocus=function(){
+    	Input[3].onfocus=function(){
     		Input[7].style.visibility="hidden";
     	}
     	Input[4].onfocus=function(){
@@ -118,7 +118,7 @@ window.onload = function(){
 						});
 				    
 		}
-	}*/
+	}
 	
 	var tname = document.getElementById('team'); 
 	tname.onblur = function(){
